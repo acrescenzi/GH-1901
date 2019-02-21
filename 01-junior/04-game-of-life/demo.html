@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hello</title>
+
+<body>
+  <hr />
+  <br />
+  <div id='container'>
+    
+    <button id="btn1">Click me! 1</button>
+    <button id="btn2">Click me! 2</button>
+    <button id="btn3">Click me! 3</button>
+
+  </div>
+  <br />
+  <hr />
+  
+  <script >
+    let library = {
+      author : '1901',
+      clickHandler : function() {
+        console.log(this, 'was clicked')
+      }
+    }
+
+    let btn1 = document.getElementById('btn1')
+    let container = document.getElementById('container');
+    container.addEventListener('click', function(event){
+      library.clickHandler.call(event.target)
+    })
+    // btn1.addEventListener('click', function(event){
+    //   console.log("CLICKED", event.target)
+    //   let bound = library.clickHandler.bind(btn1)
+
+    //   bound()
+    // })
+
+    // container.addEventListener('mouseover', function(event){
+    //   console.log("THE EVENT", event)
+    // })
+
+  </script>
+  
+</body>
+</html>

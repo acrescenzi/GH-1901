@@ -1,0 +1,50 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: #bbf;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  font-family: 'Staatliches', cursive;
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+article {
+  flex: 4;
+  overflow-y: scroll;
+}
+
+section {
+
+}
+
+p {
+
+}
+
+footer {
+
+}
